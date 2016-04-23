@@ -18,7 +18,32 @@ public class Fecha
     public int año;
     public Fecha(int segundo, int minuto, int hora, int año)
     {
-
+        int dia = 0;
+        while (segundo >= 60)
+        {
+            segundo -= 60;
+            minuto++;
+        }
+        this.segundo = segundo;
+        while (minuto >= 60)
+        {
+            minuto -= 60;
+            hora++;
+        }
+        this.minuto = minuto;
+        while (hora >= 24)
+        {
+            hora -= 24;
+            dia++;
+        }
+        this.hora = hora;
+        while (dia >= 365)
+        {
+            dia -= 365;
+            año++;
+        }
+        this.dia = dia;
+        this.año = año;
     }
     public Fecha(int segundo, int minuto, int hora, int dia, int año)
     {

@@ -42,7 +42,7 @@ public abstract class Evento : IMostrarInterfaz
 	/// <summary>
 	/// Lo que el jugador elija hacer.
 	/// </summary>
-	int chosed = 0;
+	public int chosed = 0;
 
     /// <summary>
     /// Para aplicar la solucion
