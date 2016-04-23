@@ -1,9 +1,9 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class ResourceManager : MonoBehaviour {
 
-	Resource [] resources = new Resource[6];
+	Resource [] resources = new Resource[7];
 
 	public ResourceManager(	int amountEnergy, int amountFood, int amountOxygen, 
 		int amountScience, int amountWater, int amountMattDamons, int amountMaterials){
