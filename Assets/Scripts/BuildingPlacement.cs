@@ -8,8 +8,9 @@ public class BuildingPlacement : MonoBehaviour {
     private Transform currentBuilding;
     private Rigidbody rb;
     private bool hasPlaced;
-  
 
+    [Header("Seleccionar lugares de construccion")]
+    public LayerMask Terreno;
 
     [Header("Cameras")]
     //Camera from above
@@ -53,10 +54,15 @@ public class BuildingPlacement : MonoBehaviour {
             {
                 if (!hasPlaced)
                 {
-
-                    Vector3 newPos = new Vector3(Mathf.Round(pos.x / gridSize) * gridSize, 6, Mathf.Round(pos.z / gridSize) * gridSize);
-
-                    currentBuilding.position = newPos;
+                    Ray ray = viewCamera.ScreenPointToRay(Input.mousePosition);
+                    RaycastHit hit;
+                    Vector3 newPos;
+                    if (Physics.Raycast(ray, out hit,Mathf.Infinity, Terreno))
+                    {
+                        newPos = new Vector3(Mathf.Round( hit.point.x/gridSize) *gridSize, 5, Mathf.Round(hit.point.z / gridSize)*gridSize);
+                        currentBuilding.position = newPos;
+                    }
+                  
 
                 }
 
@@ -73,7 +79,7 @@ public class BuildingPlacement : MonoBehaviour {
                 if (Input.GetMouseButtonDown(1) && hasPlaced == false)
                 {
                     //currentBuilding.Rotate(Vector3.right * 90);
-                    currentBuilding.RotateAroundLocal(Vector3.up, 10);
+                    currentBuilding.Rotate(0,0,90);
                 }
             }
         }
