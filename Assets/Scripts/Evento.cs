@@ -5,47 +5,20 @@ using System;
 
 public abstract class Evento : IMostrarInterfaz
 {
-    /// <summary>
-    /// icono a mostrar en la UI
-    /// </summary>
-    public Image Icono;
-    /// <summary>
-    /// Nombre en la UI
-    /// </summary>
-    public String Nombre;
-    /// <summary>
-    /// Fecha de inicio
-    /// </summary>
-    public Fecha FechaInicio;
-    /// <summary>
-    /// Fecha de fin
-    /// </summary>
-    public Fecha FechaFin;
-    /// <summary>
-    /// solucion aplicada 
-    /// </summary>
-    public int solucionado = 0;
 
-    /// <summary>
-    /// funcion llamada al inicio
-    /// </summary>
+    public Image Icono;
+    public String Nombre;
+    public Fecha FechaInicio;
+    public Fecha FechaFin;
+    public bool solucionado;
+
     public abstract void Inicio();
-    /// <summary>
-    /// Funcionm llamada cada Update
-    /// </summary>
     public abstract void Tick();
-    /// <summary>
-    /// Funcion llamada al finalizar el vento
-    /// </summary>
     public abstract void Fin();
 
-    /// <summary>
-    /// Para aplicar la solucion
-    /// </summary>
-    /// <param name="numero"></param>
-    public void Solucion(int numero) { }
+    void Solucion(int numero) { }
 
-    //Interfaz para mostrar por la UI
+    //Interfaz 
     public string nombre()
     {
         return Nombre;
