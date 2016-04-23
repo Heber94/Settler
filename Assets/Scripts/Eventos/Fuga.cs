@@ -36,11 +36,11 @@ namespace TodosLosEventos
 				 */ 
 				maxFugado = rnd.Next (100);
 				FechaFin = FechaInicio + new Fecha (0, 5, 0, 0, 0);
-				solucionado = false;
+				solucionado = 0;
 			} 
 			else 
 			{
-				solucionado = true;
+				solucionado = 1;
 				FechaFin = FechaInicio + new Fecha (10, 0, 0, 0, 0);
 			}
 		}
@@ -52,7 +52,7 @@ namespace TodosLosEventos
 		}
 		public override void Fin()
 		{
-			if (!solucionado) 
+			if (solucionado == 0) 
 			{
 				/* TODO
 				 * Restar fugado al recurso, no lo he implementado porque no hay ningún método apra borrar recursos a parte de build

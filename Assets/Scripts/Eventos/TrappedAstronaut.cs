@@ -30,11 +30,11 @@ namespace TodosLosEventos
 			*/
 			if (chosed == 2) 
 			{
-				solucionado = false;
+				solucionado = 0;
 			} 
 			else 
 			{
-				solucionado = true;
+				solucionado = 1;
 			}
 		}
 
@@ -44,7 +44,7 @@ namespace TodosLosEventos
 		public override void Fin()
 		{
 			int result = rnd.Next (100);
-			if (!solucionado) 
+			if (solucionado == 0) 
 			{
 				if (result <= 20) 
 				{

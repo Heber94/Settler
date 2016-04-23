@@ -24,7 +24,7 @@ public abstract class Evento : IMostrarInterfaz
     /// <summary>
     /// solucion aplicada 
     /// </summary>
-    public bool solucionado;
+    public int solucionado;
 
     /// <summary>
     /// funcion llamada al inicio

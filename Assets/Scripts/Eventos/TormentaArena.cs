@@ -39,7 +39,7 @@ namespace TodosLosEventos
 			 */
 
 			//En este caso siempre ocurrirá algo, no hay una opción ganadora.
-			solucionado = false;
+			solucionado = 0;
         }
 
         public override void Tick()
@@ -48,7 +48,7 @@ namespace TodosLosEventos
         }
         public override void Fin()
         {
-            if (!solucionado)
+            if (solucionado == 0)
             {
 				int daño;
                 /* TODO

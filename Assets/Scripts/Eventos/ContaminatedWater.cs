@@ -23,7 +23,7 @@ namespace TodosLosEventos
 			*/
 			FechaFin = FechaInicio + new Fecha (0, 0, 0, 1, 0);
 			//No se puede evitar
-			solucionado = false;
+			solucionado = 0;
 		}
 
 		public override void Tick()
@@ -34,7 +34,7 @@ namespace TodosLosEventos
 		}
 		public override void Fin()
 		{
-			if (!solucionado) 
+			if (solucionado == 0) 
 			{
 				/* TODO
 				* Mostrar en la interfaz el siguiente texto:

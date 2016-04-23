@@ -17,7 +17,7 @@ namespace TodosLosEventos
 			 * A new GPS probe sent by ESA has arrived and it will be added to your network.
 			 */
 
-			solucionado = true;
+			solucionado = 1;
 			FechaFin = FechaInicio + new Fecha (0, 10, 0, 0, 0);
 		}
 
@@ -26,7 +26,7 @@ namespace TodosLosEventos
 		}
 		public override void Fin()
 		{
-			if (solucionado) 
+			if (solucionado == 1) 
 			{
 				/* TODO
 				* Mostrar en la interfaz el siguiente texto:

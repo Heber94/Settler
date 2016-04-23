@@ -28,12 +28,12 @@ namespace TodosLosEventos
 				 * Mostrar en la interfaz el siguiente texto:
 				 * You aproach the probe to examine it.
 				 */
-				solucionado = true;
+				solucionado = 1;
 				FechaFin = FechaInicio + new Fecha (0, 5, 0, 0, 0);
 			} 
 			else 
 			{
-				solucionado = false;
+				solucionado = 0;
 				FechaFin = FechaInicio + new Fecha (10, 0, 0, 0, 0);
 			}
 		}
@@ -43,7 +43,7 @@ namespace TodosLosEventos
 		}
 		public override void Fin()
 		{
-			if (!solucionado) 
+			if (solucionado == 0) 
 			{
 				/* TODO
 				* Mostrar en la interfaz el siguiente texto:

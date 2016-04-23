@@ -27,12 +27,12 @@ namespace TodosLosEventos
 			*/
 			if (chosed == 2) 
 			{
-				solucionado = false;
+				solucionado = 0;
 				FechaFin = FechaInicio + new Fecha (0, 0, 0, 3, 0);
 			} 
 			else 
 			{
-				solucionado = true;
+				solucionado = 1;
 				FechaFin = FechaInicio + new Fecha (0, 20, 0, 0, 0);
 			}
 		}
@@ -42,7 +42,7 @@ namespace TodosLosEventos
 		}
 		public override void Fin()
 		{
-			if (!solucionado) 
+			if (solucionado == 1) 
 			{
 				/* TODO
 				* Mostrar en la interfaz el siguiente texto:
