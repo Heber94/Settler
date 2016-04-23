@@ -11,6 +11,8 @@ public class RefrescarInterfaz : MonoBehaviour
     public Text agua;
     public Text comida;
     public Text oxigeno;
+    public Text ciencia;
+    public Slider BarraVelocidad;
     //public ResourceManager GestorRecursos;
 
     // Use this for initialization
@@ -28,13 +30,18 @@ public class RefrescarInterfaz : MonoBehaviour
         agua.text = ResourceManager.getWater().ToString();
         comida.text = ResourceManager.getFood().ToString();
         oxigeno.text = ResourceManager.getOxygen().ToString();
+        ciencia.text = ResourceManager.getScience().ToString();
+
+
 
 
 
 
     }
-    public void AumentarVelocidad()
+
+    public void CambiarVelocidad()
     {
-        GestorTiempo.velocidad = 100000;
+        print(BarraVelocidad.value);
+        GestorTiempo.velocidad = (int)Mathf.Exp( BarraVelocidad.value);
     }
 }
