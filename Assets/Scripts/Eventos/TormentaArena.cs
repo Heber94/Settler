@@ -25,8 +25,8 @@ namespace TodosLosEventos
 
 			/* TODO
 			 * Mostrar una interfaz con el siguiente texto:
-			 * ¡Se acerca una tormenta de arena! Tienes que reforzar los edificios de la base, 
-			 * pero no tienes tiempo para todos. ¿Cuál de ellos quieres reforzar?
+			 * A sandstom aproaches! You have to check the enforcements of the base, 
+			 * but you only have time to check one of them. Which one do you choose?
 			 */
 
 			/* TODO
@@ -56,7 +56,7 @@ namespace TodosLosEventos
                  */
 				foreach (Edificio e in Edificios)  
 				{
-					daño = rnd.Next ();
+					daño = rnd.Next(100);
 					/* TODO
 					 * Poner los métodos que realmente correspondan.
 					 */
