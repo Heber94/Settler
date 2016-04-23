@@ -21,7 +21,7 @@ namespace TodosLosEventos
 			/* TODO
 			* Quitar X cantidad de agua.
 			*/
-			FechaFin = FechaInicio + new Fecha (0, 0, 24, 0);
+			FechaFin = FechaInicio + new Fecha (0, 0, 0, 1, 0);
 			//No se puede evitar
 			solucionado = false;
 		}

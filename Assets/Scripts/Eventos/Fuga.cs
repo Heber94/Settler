@@ -36,13 +36,13 @@ namespace TodosLosEventos
 			 	 * Sustituir por un número más acorde.
 				 */ 
 				maxFugado = rnd.Next (100);
-				FechaFin = FechaInicio + new Fecha (0, 5, 0, 0);
+				FechaFin = FechaInicio + new Fecha (0, 5, 0, 0, 0);
 				solucionado = false;
 			} 
 			else 
 			{
 				solucionado = true;
-				FechaFin = FechaInicio + new Fecha (10, 0, 0, 0);
+				FechaFin = FechaInicio + new Fecha (10, 0, 0, 0, 0);
 			}
 		}
 

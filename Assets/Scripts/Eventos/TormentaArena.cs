@@ -10,7 +10,7 @@ namespace TodosLosEventos
 		/* TODO
 		 * Cambiar la clase a como sea que se llame la clase edificio.
 		 */
-	 	private  Edificio EdificioReforzado;
+	 	//private  Edificio EdificioReforzado;
 
 		System.Random rnd = new System.Random();
 
@@ -21,7 +21,7 @@ namespace TodosLosEventos
         }
         public override void Inicio()
         {
-			FechaFin = FechaInicio + new Fecha (0, 5, 0, 0);
+			FechaFin = FechaInicio + new Fecha (0, 5, 0, 0, 0);
 
 			/* TODO
 			 * Mostrar una interfaz con el siguiente texto:
@@ -54,17 +54,17 @@ namespace TodosLosEventos
                 /* TODO
                  * Ciclar entre todos los edificios.
                  */
-				foreach (Edificio e in Edificios)  
+				//foreach (Edificio e in Edificios)  
 				{
 					daño = rnd.Next(100);
 					/* TODO
 					 * Poner los métodos que realmente correspondan.
 					 */
-					if (e.resistencia < daño) 
+					//if (e.resistencia < daño) 
 					{
-						e.destroy ();
+					//	e.destroy ();
 					}
-					if (e.equals (EdificioReforzado)) 
+					//if (e.equals (EdificioReforzado)) 
 					{
 						/* TODO
 						 * Quitar el refuerzo previamente aplicado.

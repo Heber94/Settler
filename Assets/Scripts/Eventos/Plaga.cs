@@ -29,12 +29,12 @@ namespace TodosLosEventos
 			if (chosed == 2) 
 			{
 				solucionado = false;
-				FechaFin = FechaInicio + new Fecha (0, 0, 72, 0);
+				FechaFin = FechaInicio + new Fecha (0, 0, 0, 3, 0);
 			} 
 			else 
 			{
 				solucionado = true;
-				FechaFin = FechaInicio + new Fecha (0, 20, 0, 0);
+				FechaFin = FechaInicio + new Fecha (0, 20, 0, 0, 0);
 			}
 		}
 

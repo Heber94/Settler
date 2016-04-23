@@ -18,7 +18,7 @@ namespace TodosLosEventos
 			 */
 
 			solucionado = true;
-			FechaFin = FechaInicio + new Fecha (0, 10, 0, 0);
+			FechaFin = FechaInicio + new Fecha (0, 10, 0, 0, 0);
 		}
 
 		public override void Tick()

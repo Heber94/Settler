@@ -31,13 +31,13 @@ namespace TodosLosEventos
 			*/
 			if (chosed == 2) 
 			{
-				FechaFin = FechaInicio + new Fecha (0, 0, 48, 0);
+				FechaFin = FechaInicio + new Fecha (0, 0, 0, 2, 0);
 				solucionado = false;
 			} 
 			else 
 			{
 				solucionado = true;
-				FechaFin = FechaInicio + new Fecha (0, 0, 24, 0);
+				FechaFin = FechaInicio + new Fecha (0, 0, 0, 1, 0);
 			}
 		}
 

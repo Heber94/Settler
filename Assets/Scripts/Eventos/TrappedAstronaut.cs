@@ -23,7 +23,7 @@ namespace TodosLosEventos
 			 */
 
 			int chosed;
-			FechaFin = FechaInicio + new Fecha (0, 0, 3, 0);
+			FechaFin = FechaInicio + new Fecha (0, 0, 3, 0, 0);
 
 			/* TODO
 			* Mostrar una lista con las opciones.

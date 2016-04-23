@@ -31,12 +31,12 @@ namespace TodosLosEventos
 				 * You aproach the probe to examine it.
 				 */
 				solucionado = true;
-				FechaFin = FechaInicio + new Fecha (0, 5, 0, 0);
+				FechaFin = FechaInicio + new Fecha (0, 5, 0, 0, 0);
 			} 
 			else 
 			{
 				solucionado = false;
-				FechaFin = FechaInicio + new Fecha (10, 0, 0, 0);
+				FechaFin = FechaInicio + new Fecha (10, 0, 0, 0, 0);
 			}
 		}
 
