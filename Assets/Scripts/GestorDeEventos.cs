@@ -14,23 +14,35 @@ public class GestorDeEventos : MonoBehaviour
     void Start()
     {
 
-   
-        SiguienteEvento = new Fecha(0, 0, rnd.Next(500, 1000),0,0) + GestorTiempo.FechaActual;
+
+        SiguienteEvento = new Fecha(0, 0, rnd.Next(500, 1000), 0, 0) + GestorTiempo.FechaActual;
     }
 
     void Update()
     {
+        //ejecutar funciones de los eventos
         foreach (Evento e in Eventos)
         {
-            e.Tick();
+            if (e.FechaFin > GestorTiempo.fechaActual)
+            {
+                e.Fin();
+            }
+            else
+            {
+                e.Tick();
+            }
         }
+        //eliminar eventos terminados
+        Eventos.RemoveAll(x => x.FechaFin > GestorTiempo.fechaActual);
 
-        if (SiguienteEvento > GestorTiempo.FechaActual) {
+        if (SiguienteEvento > GestorTiempo.FechaActual)
+        {
 
-            SiguienteEvento = new Fecha(0, 0, rnd.Next(500, 1000),0, 0) + GestorTiempo.FechaActual;
-
-
-         //   Eventos.Add(new TodosLosEventos.TormentaArena());
+            SiguienteEvento = new Fecha(0, 0, rnd.Next(500, 1000), 0, 0) + GestorTiempo.FechaActual;
+            Evento nuevoEvento;
+            nuevoEvento = new TodosLosEventos.TormentaArena();
+            nuevoEvento.Inicio();
+            Eventos.Add(nuevoEvento);
 
         }
 

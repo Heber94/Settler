@@ -1,37 +1,49 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Resource : MonoBehaviour {
-		
-	private int amount;
-	private string type;
+public class Resource
+{
 
-	public Resource(string type, int amount){
-		this.amount = amount;
-		this.type = type;
-	}
+    private int amount = 0;
+    private string type;
 
-	public void setAmount(int newAmount){
-		this.amount = newAmount;
-	}
+    public Resource(string type, int amount)
+    {
+        this.amount = amount;
+        this.type = type;
+    }
 
-	public int getAmount(){
-		return this.amount;
-	}
+    public void setAmount(int newAmount)
+    {
+        this.amount = newAmount;
+    }
 
-	public void substractAmount(int substraction){
-		this.amount -= substraction;
-	}
+    public int getAmount()
+    {
+        return this.amount;
+    }
 
-	public void addAmount(int addition){
-		this.amount += addition;
-	}
+    public void substractAmount(int substraction)
+    {
+        this.amount -= substraction;
+    }
 
-	public string getName(){
-		return this.type;
-	}
+    public void addAmount(int addition)
+    {
+        this.amount += addition;
+    }
 
-	public void setName(string name){
-		this.type = name;
-	}
+    public string getName()
+    {
+        return this.type;
+    }
+
+    public void setName(string name)
+    {
+        this.type = name;
+    }
+    override public string ToString()
+    {
+        return amount.ToString("0000");
+    }
 }
