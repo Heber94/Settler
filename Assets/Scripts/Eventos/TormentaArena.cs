@@ -16,7 +16,7 @@ namespace TodosLosEventos
 
        public TormentaArena()
         {
-            Nombre = "Tormenta de Arena";
+            Nombre = "Sandstorm";
             FechaInicio = GestorTiempo.fechaActual;
         }
         public override void Inicio()

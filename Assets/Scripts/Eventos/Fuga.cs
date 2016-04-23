@@ -11,7 +11,7 @@ namespace TodosLosEventos
 
 		public Fuga()
 		{
-			Nombre = "Fuga de oxígeno";
+			Nombre = "Air leak";
 			FechaInicio = GestorTiempo.fechaActual;
 		}
 		public override void Inicio()
@@ -37,6 +37,7 @@ namespace TodosLosEventos
 				 */ 
 				maxFugado = rnd.Next (100);
 				FechaFin = FechaInicio + new Fecha (0, 5, 0, 0);
+				solucionado = false;
 			} 
 			else 
 			{
