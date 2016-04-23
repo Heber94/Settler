@@ -39,6 +39,11 @@ public abstract class Evento : IMostrarInterfaz
     /// </summary>
     public abstract void Fin();
 
+	/// <summary>
+	/// Lo que el jugador elija hacer.
+	/// </summary>
+	int chosed = 0;
+
     /// <summary>
     /// Para aplicar la solucion
     /// </summary>

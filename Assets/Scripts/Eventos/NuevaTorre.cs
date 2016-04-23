@@ -17,8 +17,6 @@ namespace TodosLosEventos
 			 * You've found the old USSR's Mars 3 lander. You beieve you could use as a repeater for your GPS network.
 			 */
 
-			int chosed;
-
 			/* TODO
 			* Mostrar una lista con las opciones.
 			* 1. Invest some materials on getting the probe online.

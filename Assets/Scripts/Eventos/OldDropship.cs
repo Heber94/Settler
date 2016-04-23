@@ -22,8 +22,6 @@ namespace TodosLosEventos
 			 * Your sensors have found an old NASA's dropship orbiting the planet. you could try to controle it remotely and take it to the base.
 			 */
 
-			int chosed;
-
 			/* TODO
 			* Mostrar una lista con las opciones.
 			* 1. Try to retrieve the dropship (spend X science).

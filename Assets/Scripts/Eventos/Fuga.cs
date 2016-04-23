@@ -22,7 +22,6 @@ namespace TodosLosEventos
 			 * One of your buildings has an aire leak. Repair it ASAP!
 			 */
 
-			int chosed;
 
 			/* TODO
 			* Mostrar una lista con las opciones.

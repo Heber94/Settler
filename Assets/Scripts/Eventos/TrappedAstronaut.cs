@@ -21,8 +21,6 @@ namespace TodosLosEventos
 			 * Mostrar una interfaz con el siguiente texto:
 			 * One of your workers was taking some soil samples near the base when he fell into a ravine.
 			 */
-
-			int chosed;
 			FechaFin = FechaInicio + new Fecha (0, 0, 3, 0, 0);
 
 			/* TODO

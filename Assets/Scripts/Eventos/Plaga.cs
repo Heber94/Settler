@@ -19,7 +19,6 @@ namespace TodosLosEventos
 			 * There is a plague among your crops! What do you want to do?
 			 */
 
-			int chosed;
 
 			/* TODO
 			* Mostrar una lista con las opciones.

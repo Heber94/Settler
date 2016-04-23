@@ -17,8 +17,6 @@ namespace TodosLosEventos
 			 * You have discovered an old probe from the USSR space program. Do you want to investigate it?
 			 */
 
-			int chosed;
-
 			/* TODO
 			* Mostrar una lista con las opciones.
 			* 1. Investigate the probe.
