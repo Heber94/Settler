@@ -16,6 +16,10 @@ public class Fecha
     public int hora;
     public int dia;
     public int año;
+    public Fecha(int segundo, int minuto, int hora, int año)
+    {
+
+    }
     public Fecha(int segundo, int minuto, int hora, int dia, int año)
     {
         while (segundo >= 60)
@@ -55,9 +59,11 @@ public class Fecha
     }
     public static Fecha operator -(Fecha c1, Fecha c2)
     {
+        return new Fecha(c1.segundo - c2.segundo, c1.minuto - c2.minuto, c1.hora - c2.hora, c1.año - c2.año);
     }
     public static Fecha operator +(Fecha c1, Fecha c2)
     {
+        return new Fecha(c1.segundo + c2.segundo, c1.minuto + c2.minuto, c1.hora + c2.hora, c1.año + c2.año);
     }
     public static Fecha operator +(Fecha c1, int c2)
     {
