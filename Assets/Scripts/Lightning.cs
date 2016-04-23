@@ -4,12 +4,18 @@ using System.Collections;
 public class Lightning : MonoBehaviour
 {
 
-    public GameObject sun;
-    public GameObject deimos;
+   // public GameObject sun;
+   // public GameObject deimos;
     ulong lastSeconds = 0;
-
+    float tiempoDia = 24 * 60 * 60;
     void Update()
     {
+        ulong secsActual = GestorTiempo.FechaActual.ToSeconds();
+        transform.RotateAround(Vector3.zero, Vector3.left,((float)(secsActual-lastSeconds)/tiempoDia)*360);
+        lastSeconds = secsActual;
+      //  transform.RotateAround(Vector3.zero, Vector3.left, (float)rotation);
+
+        /*
         ulong secsActuales = GestorTiempo.FechaActual.ToSeconds();
         if (lastSeconds > secsActuales)
         {
@@ -28,7 +34,9 @@ public class Lightning : MonoBehaviour
             print("Rotation: " + rotation.ToString());
             lastSeconds = secsActuales;
             transform.RotateAround(Vector3.zero, Vector3.left, (float)rotation);
-        }
+
+        }*/
+
 
         //	void Update () {
         //		float rotation = (GestorTiempo.FechaActual.ToSeconds()%(24*60*60))/(24*60*60);
