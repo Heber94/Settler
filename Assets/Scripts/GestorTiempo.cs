@@ -6,12 +6,12 @@ using System;
 
 static class GestorTiempo
 {
-    static int Velocidad;
-    static int velocidad
+    static int Velocidad = 1;
+    static public int velocidad
     {
         get
         {
-            return velocidad;
+            return Velocidad;
         }
         set
         {
@@ -24,7 +24,7 @@ static class GestorTiempo
 
     }
     static float segundo;
-    static public Fecha fechaActual = new Fecha(0, 0, 0, 0);
+    static public Fecha fechaActual = new Fecha(0, 0,0, 0, 0);
 
 
     public static Fecha FechaActual

@@ -15,7 +15,7 @@ public class GestorDeEventos : MonoBehaviour
     {
 
    
-        SiguienteEvento = new Fecha(0, 0, rnd.Next(500, 1000),0) + GestorTiempo.FechaActual;
+        SiguienteEvento = new Fecha(0, 0, rnd.Next(500, 1000),0,0) + GestorTiempo.FechaActual;
     }
 
     void Update()
@@ -27,10 +27,10 @@ public class GestorDeEventos : MonoBehaviour
 
         if (SiguienteEvento > GestorTiempo.FechaActual) {
 
-            SiguienteEvento = new Fecha(0, 0, rnd.Next(500, 1000), 0) + GestorTiempo.FechaActual;
+            SiguienteEvento = new Fecha(0, 0, rnd.Next(500, 1000),0, 0) + GestorTiempo.FechaActual;
 
 
-            Eventos.Add(new TodosLosEventos.TormentaArena());
+         //   Eventos.Add(new TodosLosEventos.TormentaArena());
 
         }
 

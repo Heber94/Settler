@@ -6,7 +6,7 @@ public class Lightning : MonoBehaviour {
 	public GameObject sun;
 	public GameObject deimos;
 	float secsDay = 24*60*60;
-	float rotationPerSec = 360/secsDay;
+	float rotationPerSec = 360 / 24 * 60 * 60;
 	float lastDate = 0;
 	
 	// Update is called once per frame
