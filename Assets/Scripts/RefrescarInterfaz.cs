@@ -3,7 +3,7 @@ using System.Collections;
 
 using UnityEngine.UI;
 
-public class RefrescarInterfaz : MonoBehaviour
+public partial class RefrescarInterfaz : MonoBehaviour
 {
     public Text fecha;
     public Text personas;
@@ -19,6 +19,20 @@ public class RefrescarInterfaz : MonoBehaviour
     void Start()
     {
         ResourceManager.InitResourceManager(0, 0, 0, 0, 0, 0, 0);
+        cameraVisual.enabled = true;
+        cameraPlayable.enabled = false;
+        speedCamera = .1f;
+        speedZoom = 20f;
+
+        /*	displayEnergy.text = "";
+            displayScience.text = "";
+            displayWater.text = "";
+            displayFood.text = "";
+            displayOxygen.text = "";
+            displayPopulation.text = "";
+            displayMaterials.text = "";*/
+
+        ChangeResourcesText();
     }
 
     // Update is called once per frame
@@ -33,7 +47,8 @@ public class RefrescarInterfaz : MonoBehaviour
         ciencia.text = ResourceManager.getScience().ToString();
 
 
-
+        ControlCameras();
+        ChangeResourcesText();
 
 
 
