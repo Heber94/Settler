@@ -47,7 +47,7 @@ namespace TodosLosEventos
 
 		public override void Tick()
 		{
-			if (!solucionado && fugado < maxFugado)
+			if (solucionado == 0 && fugado < maxFugado)
 				fugado++;
 		}
 		public override void Fin()

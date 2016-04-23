@@ -79,8 +79,7 @@ public class Fecha
     }
     override public String ToString()
     {
-
-        return año.ToString() + " - " + dia.ToString() + " - " + hora.ToString("00") + ":" + minuto.ToString("00") + ":" + segundo.ToString("00");
+        return año.ToString("0000") + " - " + dia.ToString("000") + "\n" + hora.ToString("00") + ":" + minuto.ToString("00") + ":" + segundo.ToString("00");
     }
     public static Fecha operator -(Fecha c1, Fecha c2)
     {
