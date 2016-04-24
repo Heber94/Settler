@@ -18,7 +18,7 @@ public partial class RefrescarInterfaz : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        ResourceManager.InitResourceManager(0, 0, 0, 0, 0, 0, 0);
+        ResourceManager.InitResourceManager(100, 30,620, 62,78, 9,12);
         cameraPlayable = true;
         speedCamera = .1f;
         speedZoom = 20f;

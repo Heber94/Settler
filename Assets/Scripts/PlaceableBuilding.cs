@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
+using UnityEngine.Audio;
 
 public class PlaceableBuilding : MonoBehaviour {
 
@@ -10,7 +11,7 @@ public class PlaceableBuilding : MonoBehaviour {
 
     [HideInInspector]
     public List<Collider> colliders = new List<Collider>();
-
+    public AudioSource placed;
 
    // public ResourceManager res;
 
@@ -44,6 +45,8 @@ public class PlaceableBuilding : MonoBehaviour {
 
         if (c.tag == "Terrain")
         {
+
+            placed.Play();
             rb.isKinematic = true;
             rb.useGravity = false;
         }

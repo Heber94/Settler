@@ -24,7 +24,7 @@ static class GestorTiempo
 
     }
     static float segundo;
-    static public Fecha fechaActual = new Fecha(0, 0,0, 0, 0);
+    static public Fecha fechaActual = new Fecha(0, 0, 12, 0, 0);
 
 
     public static Fecha FechaActual

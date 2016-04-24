@@ -120,21 +120,21 @@ public partial class RefrescarInterfaz : MonoBehaviour
 
 	public void ControlCameras(){
 			//Camera to the right
-			if ((Input.GetKey(KeyCode.D) && !cameraPlayable) || (Input.mousePosition.y <= (Screen.height * 0.05) && cameraPlayable)) {
+			if ((Input.GetKey(KeyCode.S) && !cameraPlayable) || (Input.mousePosition.y <= (Screen.height * 0.05) && cameraPlayable)) {
 				cameraObject.transform.position = new Vector3 (
 					cameraObject.transform.position.x, 
 					cameraObject.transform.position.y, 
 					cameraObject.transform.position.z - (1 * speedCamera));
 			}
 			//Camera to the left
-			if ((Input.GetKey(KeyCode.A) && !cameraPlayable)|| (Input.mousePosition.y >= (Screen.height * 0.95) && cameraPlayable)) {
+			if ((Input.GetKey(KeyCode.W) && !cameraPlayable)|| (Input.mousePosition.y >= (Screen.height * 0.95) && cameraPlayable)) {
 				cameraObject.transform.position = new Vector3 (
 					cameraObject.transform.position.x, 
 					cameraObject.transform.position.y, 
 					cameraObject.transform.position.z + (1 * speedCamera));
 			}
 			//Camera to the top
-			if ((Input.GetKey (KeyCode.W) && !cameraPlayable) || (Input.mousePosition.x >= (Screen.width * 0.95) && cameraPlayable))
+			if ((Input.GetKey (KeyCode.D) && !cameraPlayable) || (Input.mousePosition.x >= (Screen.width * 0.95) && cameraPlayable))
         {
             cameraObject.transform.position = new Vector3 (
 					cameraObject.transform.position.x + (1 * speedCamera), 
@@ -142,7 +142,7 @@ public partial class RefrescarInterfaz : MonoBehaviour
 					cameraObject.transform.position.z);
 			}
 			//Camera to the bottom
-			if ((Input.GetKey (KeyCode.S) && !cameraPlayable) || (Input.mousePosition.x <= (Screen.width * 0.05) && cameraPlayable)) {
+			if ((Input.GetKey (KeyCode.A) && !cameraPlayable) || (Input.mousePosition.x <= (Screen.width * 0.05) && cameraPlayable)) {
 				cameraObject.transform.position = new Vector3 (
 					cameraObject.transform.position.x - (1 * speedCamera), 
 					cameraObject.transform.position.y, 

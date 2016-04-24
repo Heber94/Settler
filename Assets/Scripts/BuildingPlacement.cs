@@ -59,7 +59,7 @@ public class BuildingPlacement : MonoBehaviour {
                     Vector3 newPos;
                     if (Physics.Raycast(ray, out hit,Mathf.Infinity, Terreno))
                     {
-                        newPos = new Vector3(Mathf.Round( hit.point.x/gridSize) *gridSize, 5, Mathf.Round(hit.point.z / gridSize)*gridSize);
+                        newPos = new Vector3(Mathf.Round( hit.point.x/gridSize) *gridSize, 7, Mathf.Round(hit.point.z / gridSize)*gridSize);
                         currentBuilding.position = newPos;
                     }
                   

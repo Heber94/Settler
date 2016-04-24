@@ -10,7 +10,7 @@ public class BuildingManager : MonoBehaviour
     private BuildingPlacement buildingPlacement;
 
     [HideInInspector]
-    public int[] buildingAmount = new int[1];
+    public int[] buildingAmount = new int[5];
 
 
 
